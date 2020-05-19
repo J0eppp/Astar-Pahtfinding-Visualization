@@ -1,5 +1,8 @@
 package me.j0eppp.astarvisualization;
 
+import java.awt.event.MouseWheelEvent;
+import java.awt.event.MouseWheelListener;
+
 public class Main {
 
     static Frame frame;
@@ -7,15 +10,41 @@ public class Main {
     static boolean mousePressed = false;
     static int buttonPressed = 0;
 
-    public static void main(String[] args) throws InterruptedException {
-        int frameWidth = 1200;
-        int frameHeight = 700;
-        int scale = 40;
+    static boolean keyPressed = false;
+    static Character pressedKey = ' ';
+    static CLICK_ACTION clickAction = CLICK_ACTION.NORMAL;
 
+    static int[] startCellLoc;
+    static int[] endCellLoc;
 
-        frame = new Frame("A* pathfinding", 1200, 700, 40);
+    public static int h(Cell cell) {
+        int returnValue = 0;
 
-        Thread.sleep(3000);
-        System.out.println(frame.getCells().get(0));
+        return returnValue;
+    }
+
+    public static int g(Cell cell) {
+        int returnValue = 0;
+
+        return returnValue;
+    }
+
+    public static int f(Cell cell) {
+        return g(cell) + h(cell);
+    }
+
+    static int scale;
+    static int width;
+    static int height;
+
+    public static void main(String[] args) {
+        scale = 40;
+        width = 1200;
+        height = 700;
+
+        startCellLoc = new int[]{-1, -1};
+        endCellLoc = new int[]{-1, -1};
+
+        frame = new Frame("A* pathfinding");
     }
 }

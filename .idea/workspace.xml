@@ -2,7 +2,16 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="d743d52b-e96a-44fc-a77c-8d642e1f9450" name="Default Changelist" comment="">
+      <change afterPath="$PROJECT_DIR$/.idea/inspectionProfiles/Project_Default.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/OldFrame.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/me/j0eppp/astarvisualization/CLICK_ACTION.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/me/j0eppp/astarvisualization/Cell.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/me/j0eppp/astarvisualization/Grid.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.gitignore" beforeDir="false" afterPath="$PROJECT_DIR$/.gitignore" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/me/j0eppp/astarvisualization/CELL_TYPE.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/me/j0eppp/astarvisualization/CELL_TYPE.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/me/j0eppp/astarvisualization/Frame.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/me/j0eppp/astarvisualization/Frame.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/me/j0eppp/astarvisualization/Main.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/me/j0eppp/astarvisualization/Main.java" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -12,6 +21,7 @@
   <component name="FileTemplateManagerImpl">
     <option name="RECENT_TEMPLATES">
       <list>
+        <option value="Enum" />
         <option value="Class" />
       </list>
     </option>
@@ -33,6 +43,11 @@
     <property name="project.structure.proportion" value="0.0" />
     <property name="project.structure.side.proportion" value="0.0" />
     <property name="restartRequiresConfirmation" value="false" />
+  </component>
+  <component name="RecentsManager">
+    <key name="MoveFile.RECENT_KEYS">
+      <recent name="F:\Astar-Pathfinding-Visualization\src" />
+    </key>
   </component>
   <component name="RunManager">
     <configuration name="Main" type="Application" factoryName="Application" temporary="true">
@@ -77,21 +92,45 @@
     <option name="oldMeFiltersMigrated" value="true" />
   </component>
   <component name="WindowStateProjectService">
-    <state width="1877" height="281" key="GridCell.Tab.0.bottom" timestamp="1589901411519">
+    <state x="552" y="178" width="816" height="730" key="#Intentions" timestamp="1589915596426">
       <screen x="0" y="0" width="1920" height="1040" />
     </state>
-    <state width="1877" height="281" key="GridCell.Tab.0.bottom/0.0.1920.1040/-1360.-139.1360.768@0.0.1920.1040" timestamp="1589901411519" />
-    <state width="1877" height="281" key="GridCell.Tab.0.center" timestamp="1589901411519">
+    <state x="552" y="178" width="816" height="730" key="#Intentions/0.0.1920.1040/-1360.-139.1360.768@0.0.1920.1040" timestamp="1589915596426" />
+    <state x="765" y="226" key="#com.intellij.ide.util.MemberChooser" timestamp="1589917954133">
       <screen x="0" y="0" width="1920" height="1040" />
     </state>
-    <state width="1877" height="281" key="GridCell.Tab.0.center/0.0.1920.1040/-1360.-139.1360.768@0.0.1920.1040" timestamp="1589901411519" />
-    <state width="1877" height="281" key="GridCell.Tab.0.left" timestamp="1589901411519">
+    <state x="765" y="226" key="#com.intellij.ide.util.MemberChooser/0.0.1920.1040/-1360.-139.1360.768@0.0.1920.1040" timestamp="1589917954133" />
+    <state x="690" y="266" key="#com.intellij.refactoring.safeDelete.UnsafeUsagesDialog" timestamp="1589902549756">
       <screen x="0" y="0" width="1920" height="1040" />
     </state>
-    <state width="1877" height="281" key="GridCell.Tab.0.left/0.0.1920.1040/-1360.-139.1360.768@0.0.1920.1040" timestamp="1589901411519" />
-    <state width="1877" height="281" key="GridCell.Tab.0.right" timestamp="1589901411519">
+    <state x="690" y="266" key="#com.intellij.refactoring.safeDelete.UnsafeUsagesDialog/0.0.1920.1040/-1360.-139.1360.768@0.0.1920.1040" timestamp="1589902549756" />
+    <state width="1877" height="281" key="GridCell.Tab.0.bottom" timestamp="1589919382759">
       <screen x="0" y="0" width="1920" height="1040" />
     </state>
-    <state width="1877" height="281" key="GridCell.Tab.0.right/0.0.1920.1040/-1360.-139.1360.768@0.0.1920.1040" timestamp="1589901411519" />
+    <state width="1877" height="281" key="GridCell.Tab.0.bottom/0.0.1920.1040/-1360.-139.1360.768@0.0.1920.1040" timestamp="1589919382759" />
+    <state width="1877" height="281" key="GridCell.Tab.0.center" timestamp="1589919382759">
+      <screen x="0" y="0" width="1920" height="1040" />
+    </state>
+    <state width="1877" height="281" key="GridCell.Tab.0.center/0.0.1920.1040/-1360.-139.1360.768@0.0.1920.1040" timestamp="1589919382759" />
+    <state width="1877" height="281" key="GridCell.Tab.0.left" timestamp="1589919382759">
+      <screen x="0" y="0" width="1920" height="1040" />
+    </state>
+    <state width="1877" height="281" key="GridCell.Tab.0.left/0.0.1920.1040/-1360.-139.1360.768@0.0.1920.1040" timestamp="1589919382759" />
+    <state width="1877" height="281" key="GridCell.Tab.0.right" timestamp="1589919382759">
+      <screen x="0" y="0" width="1920" height="1040" />
+    </state>
+    <state width="1877" height="281" key="GridCell.Tab.0.right/0.0.1920.1040/-1360.-139.1360.768@0.0.1920.1040" timestamp="1589919382759" />
+    <state x="769" y="433" key="com.intellij.openapi.vcs.update.UpdateOrStatusOptionsDialogupdate-v2" timestamp="1589921801278">
+      <screen x="0" y="0" width="1920" height="1040" />
+    </state>
+    <state x="769" y="433" key="com.intellij.openapi.vcs.update.UpdateOrStatusOptionsDialogupdate-v2/0.0.1920.1040/-1360.-139.1360.768@0.0.1920.1040" timestamp="1589921801278" />
+    <state x="616" y="240" key="run.anything.popup" timestamp="1589915847752">
+      <screen x="0" y="0" width="1920" height="1040" />
+    </state>
+    <state x="616" y="240" key="run.anything.popup/0.0.1920.1040/-1360.-139.1360.768@0.0.1920.1040" timestamp="1589915847752" />
+    <state x="623" y="225" width="672" height="678" key="search.everywhere.popup" timestamp="1589916759448">
+      <screen x="0" y="0" width="1920" height="1040" />
+    </state>
+    <state x="623" y="225" width="672" height="678" key="search.everywhere.popup/0.0.1920.1040/-1360.-139.1360.768@0.0.1920.1040" timestamp="1589916759448" />
   </component>
 </project>
