@@ -2,16 +2,7 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="d743d52b-e96a-44fc-a77c-8d642e1f9450" name="Default Changelist" comment="">
-      <change afterPath="$PROJECT_DIR$/.idea/uiDesigner.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/.idea/vcs.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/me/j0eppp/astarvisualization/CELL_TYPE.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/me/j0eppp/astarvisualization/Canvas.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/me/j0eppp/astarvisualization/Frame.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/me/j0eppp/astarvisualization/NODE_TYPE.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/me/j0eppp/astarvisualization/Node.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/README.md" beforeDir="false" afterPath="$PROJECT_DIR$/README.md" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/me/j0eppp/astarvisualization/Main.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/me/j0eppp/astarvisualization/Main.java" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -86,21 +77,21 @@
     <option name="oldMeFiltersMigrated" value="true" />
   </component>
   <component name="WindowStateProjectService">
-    <state width="1877" height="281" key="GridCell.Tab.0.bottom" timestamp="1589901032742">
+    <state width="1877" height="281" key="GridCell.Tab.0.bottom" timestamp="1589901411519">
       <screen x="0" y="0" width="1920" height="1040" />
     </state>
-    <state width="1877" height="281" key="GridCell.Tab.0.bottom/0.0.1920.1040/-1360.-139.1360.768@0.0.1920.1040" timestamp="1589901032742" />
-    <state width="1877" height="281" key="GridCell.Tab.0.center" timestamp="1589901032742">
+    <state width="1877" height="281" key="GridCell.Tab.0.bottom/0.0.1920.1040/-1360.-139.1360.768@0.0.1920.1040" timestamp="1589901411519" />
+    <state width="1877" height="281" key="GridCell.Tab.0.center" timestamp="1589901411519">
       <screen x="0" y="0" width="1920" height="1040" />
     </state>
-    <state width="1877" height="281" key="GridCell.Tab.0.center/0.0.1920.1040/-1360.-139.1360.768@0.0.1920.1040" timestamp="1589901032742" />
-    <state width="1877" height="281" key="GridCell.Tab.0.left" timestamp="1589901032741">
+    <state width="1877" height="281" key="GridCell.Tab.0.center/0.0.1920.1040/-1360.-139.1360.768@0.0.1920.1040" timestamp="1589901411519" />
+    <state width="1877" height="281" key="GridCell.Tab.0.left" timestamp="1589901411519">
       <screen x="0" y="0" width="1920" height="1040" />
     </state>
-    <state width="1877" height="281" key="GridCell.Tab.0.left/0.0.1920.1040/-1360.-139.1360.768@0.0.1920.1040" timestamp="1589901032741" />
-    <state width="1877" height="281" key="GridCell.Tab.0.right" timestamp="1589901032742">
+    <state width="1877" height="281" key="GridCell.Tab.0.left/0.0.1920.1040/-1360.-139.1360.768@0.0.1920.1040" timestamp="1589901411519" />
+    <state width="1877" height="281" key="GridCell.Tab.0.right" timestamp="1589901411519">
       <screen x="0" y="0" width="1920" height="1040" />
     </state>
-    <state width="1877" height="281" key="GridCell.Tab.0.right/0.0.1920.1040/-1360.-139.1360.768@0.0.1920.1040" timestamp="1589901032742" />
+    <state width="1877" height="281" key="GridCell.Tab.0.right/0.0.1920.1040/-1360.-139.1360.768@0.0.1920.1040" timestamp="1589901411519" />
   </component>
 </project>
