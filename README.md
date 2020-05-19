@@ -1,2 +1,2 @@
-# Astar-Pahtfinding-Visualization
+# Astar-Pathfinding-Visualization
 A* pathfinding project
