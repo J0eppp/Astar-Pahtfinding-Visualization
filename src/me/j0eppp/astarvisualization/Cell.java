@@ -2,8 +2,6 @@ package me.j0eppp.astarvisualization;
 
 import javax.swing.*;
 import java.awt.*;
-import java.awt.event.KeyEvent;
-import java.awt.event.KeyListener;
 import java.awt.event.MouseEvent;
 import java.awt.event.MouseListener;
 
@@ -34,20 +32,18 @@ class Cell extends JPanel implements MouseListener {
 	}
 
 	private void leftClick() {
+		if (!Main.calculating) {
 			switch (Main.pressedKey) {
 				case 's':
 					// Make the cell a "start" cell
 					// Remove the last start cell if it exists
-					if (Main.startCellLoc[0] != -1 && Main.startCellLoc[1] != -1) {
-						System.out.println(Main.frame.getGrid().getCells().get(Main.startCellLoc[0] + ", " + Main.startCellLoc[1]));
-						Main.frame.getGrid().getCells().get(Main.startCellLoc[0] + ", " + Main.startCellLoc[1]).defaultColor = Color.WHITE;
-						Main.frame.getGrid().getCells().get(Main.startCellLoc[0] + ", " + Main.startCellLoc[1]).cellType = CELL_TYPE.AIR;
-						Main.frame.getGrid().getCells().get(Main.startCellLoc[0] + ", " + Main.startCellLoc[1]).setBackground(Color.WHITE);
+					if (Main.startCell != null) {
+						Main.startCell.defaultColor = Color.WHITE;
+						Main.startCell.cellType = CELL_TYPE.AIR;
+						Main.startCell.setBackground(Main.startCell.defaultColor);
 					}
 
-
-					Main.startCellLoc[0] = x;
-					Main.startCellLoc[1] = y;
+					Main.startCell = this;
 
 					defaultColor = Color.BLUE;
 					cellType = CELL_TYPE.START;
@@ -55,17 +51,16 @@ class Cell extends JPanel implements MouseListener {
 				case 'e':
 					// Make the cell a "end" cell
 					// Remove the last end cell if it exists
-					if (Main.endCellLoc[0] != -1 && Main.endCellLoc[1] != -1) {
-						Main.frame.getGrid().getCells().get(Main.endCellLoc[0] + ", " + Main.endCellLoc[1]).defaultColor = Color.WHITE;
-						Main.frame.getGrid().getCells().get(Main.endCellLoc[0] + ", " + Main.endCellLoc[1]).cellType = CELL_TYPE.AIR;
-						Main.frame.getGrid().getCells().get(Main.endCellLoc[0] + ", " + Main.endCellLoc[1]).setBackground(Color.WHITE);
+					if (Main.endCell != null) {
+						Main.endCell.defaultColor = Color.WHITE;
+						Main.endCell.cellType = CELL_TYPE.AIR;
+						Main.endCell.setBackground(Main.endCell.defaultColor);
 					}
+
+					Main.endCell = this;
 
 					defaultColor = Color.RED;
 					cellType = CELL_TYPE.END;
-
-					Main.endCellLoc[0] = x;
-					Main.endCellLoc[1] = y;
 					break;
 				default:
 					// Make the cell a wall
@@ -76,9 +71,10 @@ class Cell extends JPanel implements MouseListener {
 					break;
 			}
 		}
+	}
 
 	private void rightClick() {
-		if (!Main.keyPressed) {
+		if (!Main.keyPressed && !Main.calculating) {
 			// Make the wall an "air" cell
 			if (cellType == CELL_TYPE.WALL) {
 				defaultColor = Color.WHITE;
@@ -93,36 +89,14 @@ class Cell extends JPanel implements MouseListener {
 	}
 
 	@Override
-	public void mouseClicked(MouseEvent mouseEvent) {
-		System.out.println(x + ", " + y);
-	}
+	public void mouseClicked(MouseEvent mouseEvent) {}
 
 	@Override
 	public void mousePressed(MouseEvent mouseEvent) {
-		Main.mousePressed = true;
-		Main.buttonPressed = mouseEvent.getButton();
+		if (!Main.calculating) {
+			Main.mousePressed = true;
+			Main.buttonPressed = mouseEvent.getButton();
 
-		if (Main.buttonPressed == 1) {
-			// Left
-			leftClick();
-		} else if (Main.buttonPressed == 3) {
-			// Right
-			rightClick();
-		}
-		setBackground(defaultColor);
-	}
-
-	@Override
-	public void mouseReleased(MouseEvent mouseEvent) {
-		Main.mousePressed = false;
-		Main.buttonPressed = 0;
-	}
-
-	@Override
-	public void mouseEntered(MouseEvent mouseEvent) {
-		if (!Main.mousePressed) {
-			setBackground(new Color(150, 0, 140));
-		} else {
 			if (Main.buttonPressed == 1) {
 				// Left
 				leftClick();
@@ -135,8 +109,34 @@ class Cell extends JPanel implements MouseListener {
 	}
 
 	@Override
+	public void mouseReleased(MouseEvent mouseEvent) {
+		Main.mousePressed = false;
+		Main.buttonPressed = 0;
+	}
+
+	@Override
+	public void mouseEntered(MouseEvent mouseEvent) {
+		if (!Main.calculating) {
+			if (!Main.mousePressed) {
+				setBackground(new Color(150, 0, 140));
+			} else {
+				if (Main.buttonPressed == 1) {
+					// Left
+					leftClick();
+				} else if (Main.buttonPressed == 3) {
+					// Right
+					rightClick();
+				}
+				setBackground(defaultColor);
+			}
+		}
+	}
+
+	@Override
 	public void mouseExited(MouseEvent mouseEvent) {
-		setBackground(defaultColor);
+		if (!Main.calculating) {
+			setBackground(defaultColor);
+		}
 	}
 
 }
